@@ -16,11 +16,49 @@
       crossorigin="anonymous"
     />
 
+    <style>
+      #ex-1 > div {
+        border-radius: 2rem !important;
+        border-width: 0.2rem !important;
+      }
+
+      #ex-1
+        > div
+        > div
+        > div
+        > div:nth-child(2)
+        > div:nth-child(1) {
+        background: #fff7bd !important;
+      }
+
+      #ex-1
+        > div
+        > div
+        > div
+        > div
+        > div:nth-child(2) {
+        background: #ffed68 !important;
+      }
+
+      #ex-1
+        > div
+        > div
+        > div
+        > div
+        > div:nth-child(3) {
+        background: #ffe41e !important;
+      }
+
+      #ex-1 > div > div {
+        border-width: 0.2rem !important;
+      }
+    </style>
+
     <title>Hello, world!</title>
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary"
+      class="navbar navbar-expand-lg navbar-dark bg-primary mb-4"
     >
       <div class="container">
         <a class="navbar-brand" href="#"
@@ -58,7 +96,540 @@
       </div>
     </nav>
 
-    <div class="container"></div>
+    <div class="container">
+      <!-- EX. 1 -->
+      <div class="container mb-4" id="ex-1">
+        <div
+          class="row no-gutters rounded-pill border border-dark overflow-hidden"
+        >
+          <div
+            class="col-sm bg-success d-flex justify-content-center align-items-center border-right border-dark"
+          >
+            <div class="text-white">
+              <p class="m-0">First Column</p>
+              <p class="m-0">Height 400px;</p>
+              <p class="m-0">
+                Green-ish background
+              </p>
+              <p class="m-0">Text Centered</p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="row no-gutters">
+              <div
+                class="col-sm bg-primary d-flex align-items-end pb-4 pl-3 text-white font-weight-bold"
+              >
+                <div>
+                  <p class="m-0">Second Column</p>
+                  <p class="m-0">
+                    Text To the bottom
+                  </p>
+                  <p class="m-0">Bold, blueish</p>
+                  <p class="m-0">background</p>
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <div
+                  class="row no-gutters bg-warning py-5 d-flex justify-content-center"
+                >
+                  Third Column Part 1
+                </div>
+                <div
+                  class="row no-gutters bg-warning py-5 d-flex justify-content-center"
+                >
+                  Third Column Part 2
+                </div>
+                <div
+                  class="row no-gutters bg-warning py-5 d-flex justify-content-center"
+                >
+                  Third Column Part 3
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- EX. 2 -->
+      <div id="ex-2" class="mb-4">
+        <div class="card-deck text-center">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">
+                Free
+              </h4>
+            </div>
+            <div class="card-body">
+              <h1
+                class="card-title pricing-card-title"
+              >
+                $0 /
+                <small class="text-muted">
+                  mo</small
+                >
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>10 users included</li>
+                <li>2 GB of storage</li>
+                <li>Email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-lg btn-block btn-outline-primary"
+              >
+                Sign up for free
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">
+                Pro
+              </h4>
+            </div>
+            <div class="card-body">
+              <h1
+                class="card-title pricing-card-title"
+              >
+                $15 /
+                <small class="text-muted">
+                  mo</small
+                >
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>20 users included</li>
+                <li>10 GB of storage</li>
+                <li>Priority email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-lg btn-block btn-primary"
+              >
+                Get started
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">
+                Enterprise
+              </h4>
+            </div>
+            <div class="card-body">
+              <h1
+                class="card-title pricing-card-title"
+              >
+                $29 /
+                <small class="text-muted">
+                  mo</small
+                >
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>30 users included</li>
+                <li>15 GB of storage</li>
+                <li>Phone and email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-lg btn-block btn-primary"
+              >
+                Contact us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EX. 3 -->
+      <div id="ex-3" class="mb-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img
+                  class="card-img-top"
+                  src="http://placehold.it/348x245"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                    Vero, aperiam animi? Sit, ex
+                    explicabo amet natus delectus
+                    culpa vel eius atque quo ipsam
+                    aut, ab nihil maxime
+                    cupiditate excepturi
+                    perspiciatis.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted"
+                      >59 mins</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img
+                  class="card-img-top"
+                  src="http://placehold.it/348x245"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                    Vero, aperiam animi? Sit, ex
+                    explicabo amet natus delectus
+                    culpa vel eius atque quo ipsam
+                    aut, ab nihil maxime
+                    cupiditate excepturi
+                    perspiciatis.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted"
+                      >59 mins</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img
+                  class="card-img-top"
+                  src="http://placehold.it/348x245"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                    Vero, aperiam animi? Sit, ex
+                    explicabo amet natus delectus
+                    culpa vel eius atque quo ipsam
+                    aut, ab nihil maxime
+                    cupiditate excepturi
+                    perspiciatis.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted"
+                      >59 mins</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img
+                  class="card-img-top"
+                  src="http://placehold.it/348x245"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                    Vero, aperiam animi? Sit, ex
+                    explicabo amet natus delectus
+                    culpa vel eius atque quo ipsam
+                    aut, ab nihil maxime
+                    cupiditate excepturi
+                    perspiciatis.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted"
+                      >59 mins</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img
+                  class="card-img-top"
+                  src="http://placehold.it/348x245"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                    Vero, aperiam animi? Sit, ex
+                    explicabo amet natus delectus
+                    culpa vel eius atque quo ipsam
+                    aut, ab nihil maxime
+                    cupiditate excepturi
+                    perspiciatis.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted"
+                      >59 mins</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img
+                  class="card-img-top"
+                  src="http://placehold.it/348x245"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                    Vero, aperiam animi? Sit, ex
+                    explicabo amet natus delectus
+                    culpa vel eius atque quo ipsam
+                    aut, ab nihil maxime
+                    cupiditate excepturi
+                    perspiciatis.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted"
+                      >59 mins</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img
+                  class="card-img-top"
+                  src="http://placehold.it/348x245"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                    Vero, aperiam animi? Sit, ex
+                    explicabo amet natus delectus
+                    culpa vel eius atque quo ipsam
+                    aut, ab nihil maxime
+                    cupiditate excepturi
+                    perspiciatis.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted"
+                      >59 mins</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img
+                  class="card-img-top"
+                  src="http://placehold.it/348x245"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                    Vero, aperiam animi? Sit, ex
+                    explicabo amet natus delectus
+                    culpa vel eius atque quo ipsam
+                    aut, ab nihil maxime
+                    cupiditate excepturi
+                    perspiciatis.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted"
+                      >59 mins</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img
+                  class="card-img-top"
+                  src="http://placehold.it/348x245"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                    Vero, aperiam animi? Sit, ex
+                    explicabo amet natus delectus
+                    culpa vel eius atque quo ipsam
+                    aut, ab nihil maxime
+                    cupiditate excepturi
+                    perspiciatis.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted"
+                      >59 mins</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
